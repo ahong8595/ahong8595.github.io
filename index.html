@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Portfolio of Andrew Honge</title>
-		
+		<title>Portfolio of Andrew Hong</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<style>
+
+			body, html{
+				margin:0px;
+				background-image: url('Images/images.jpeg');
+				background-size: cover;
+				background-position: center; 
+				background-repeat: no-repeat;
+			}
+
             .top {
   			list-style-type: none;
   			margin: 0px;
   			padding: 0;
   			overflow: hidden;
-  			background-color: #333;
 		    }
 
             .top>li {
@@ -24,45 +37,69 @@
                 text-decoration: none;
             }
 
+			.img-fluid {
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
             li a:hover {
                 background-color: #111;
             }
 
+			.body{
+				width:90vw;
+				height:85vh;
+				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				transform: translateY(10%);
+				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+				background-color: white;
+			}
+
 			.Footer {  
    				bottom : 2px;  
    				height : 40px;  
-   				margin-top : 40px;  
+   				margin-top : 260px;  
    				text-align: center;  
    				vertical-align: middle; 
-   				position:fixed;
    				width:100%;
+				text-align: center;
 }
 
         </style>
 	</head>
-	<body style = "background-color: cornflowerblue; margin:0px">
-    		<ul class = "top">
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/About.html">About</a></li>
-        		<li><a href="/About.html">Projects</a></li>
-    		</ul>
-		<center>
-			<img src = Images/IMG_0123.jpg alt = "Profile" style = "height:200px; width:900px "></img>
-		</center>
-		<div class="container">
-    		<div class="blurb">
-                <center>
-        		<h1>Personal Website</h1>
-				<p>My name is Andrew Hong and I am planning to create a personal website during the summer. Stay tuned for new updates.</p>
-				</center>
-		<center>
-        <footer class = "Footer"> 
-    		
-        		<span><a href="mailto:ahong8595@gmail.com">Email</a> </span>
-                <span><a href="https://github.com/ahong8595">GitHub</a> </span>
-                <span><a href="https://www.linkedin.com/in/andrew-hong-a99330149/">LinkedIn</a></span>
-        </center>
-		</footer>
+	<body>
+		<div class = "body">
+			<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+				<a class="navbar-brand" href="/">Home</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+				<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="collapsibleNavbar">
+					<ul class = "navbar-nav">
+						<li class = "nav-item"><a class= "nav-link" href="/About.html">About</a></li>
+						<li class = "nav-item"><a class= "nav-link" href="/Projects.html">Projects</a></li>
+					</ul>
+				</div>  
+			</nav>
+			<center>
+				<img class = "img-fluid" src = Images/IMG_0123.jpg alt = "Profile" style = "height:200px; width:900px "></img>
+			</center>
+			<div class="container">
+				<div class="blurb">
+					<center>
+					<h1>Personal Website</h1>
+					<p>My name is Andrew Hong and I am planning to create a personal website during the summer. Stay tuned for new updates.</p>
+					</center>
+			</div>
+			<footer class = "Footer"  > 
+						<span><a href="mailto:ahong8595@gmail.com">Email</a> </span>
+						<span><a href="https://github.com/ahong8595">GitHub</a> </span>
+						<span><a href="https://www.linkedin.com/in/andrew-hong-a99330149/">LinkedIn</a></span>
+			</footer>
+		</div>
 	</body>
 			
 </html>
