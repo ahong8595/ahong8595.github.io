@@ -89,9 +89,12 @@
 				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
 				background-color: white;
 				margin-bottom:50px;
-                overflow:scroll
 			}
             
+            .container {
+                overflow:scroll;
+            }
+
             .dropdown {
                 display: none;
             }
@@ -101,7 +104,6 @@
 			}
 
 			.Footer {  
-                position: fixed;
     			height: 50px;
     			left: 0px;
     			right: 0px;
@@ -142,6 +144,7 @@
                         <br>
                         <b>Zebrafish under Hypoxia</b>
                         <div id = "UMBCText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
                     </div>
                     <div id = "OSV" class="col-sm-4">
@@ -151,6 +154,7 @@
                         <br>
                         <b>Over-Sand Vehicle</b>
                         <div id = "OSVText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
 
                     </div>
@@ -159,6 +163,7 @@
                         <br>
                         <b>Root and Rule Document Search</b>
                         <div id = "RandRText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
                     </div>
                 </div>
@@ -169,6 +174,7 @@
                         <br>
                         <b>This Website!</b>
                         <div id = "UMBCText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
                     </div>
                     <div id = "OSV" class="col-sm-4">
@@ -176,6 +182,7 @@
                         <br>
                         <b>UMD Professor and Class Information</b>
                         <div id = "OSVText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
 
                     </div>
@@ -184,12 +191,21 @@
                         <br>
                         <b>IOS App Developed Using Swift</b>
                         <div id = "RandRText" class = "dropdown">
+                            <p>Hello</p>
                         </div>
                     </div>
                 </div>
             </div>	
             
-            
+            <div>
+                <div class="Footer">
+                    <button type="button" class="btn btn-primary btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
+                    <button type="button" class="btn btn-primary btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
+    
+                </div>
+            </div>
+            <!--
             <div>
 				<div class="Footer">
 					<button type="button" class="btn btn-outline-primary" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
@@ -197,7 +213,10 @@
 					<button type="button" class="btn btn-outline-primary" onclick = "openLink('https://github.com/ahong8595')">Github</button>
 
 				</div>
-			</div>
+            </div>
+        -->
+
+        
         
 
 	</body>
