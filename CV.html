@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio of Andrew Hong</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+
+			body, html{
+				margin:0px;
+				height: 100%;
+				/*
+				background-color: #0093E9;
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+				background-size: cover;
+				background-position: center; 
+				background-repeat: no-repeat;
+				overflow: hidden;
+				*/
+				overflow: scroll;
+
+			}
+            .top {
+  			list-style-type: none;
+  			margin: 0px;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+		    }
+
+            .top>li {
+                float: left;
+            }
+
+            .top>li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+
+            .col-sm-4{
+                text-align:center;
+            }
+            .img-fluid {
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .img-fluid:hover {
+                transition: transform .75s ease;
+                transform: scale(1.05);
+            }
+
+            .video{
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .video:hover {
+                transition: transform .75s ease;
+                transform: scale(1.1);
+            }
+
+			.body{
+				width:90vw;
+				height:85vh;
+				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				transform: translateY(10%);
+				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+				background-color: white;
+				margin-bottom:50px;
+                overflow:scroll
+			}
+
+			.scrollspy-example {
+    			position: relative;
+    			height: 90%;
+    			margin-top: .5rem;
+    			overflow: auto;
+			}
+
+			.item{
+				margin-left: 25px;
+			}
+
+			.bg-custom {
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			}
+
+			.Footer {  
+				position: fixed;
+    			height: 50px;
+    			left: 0px;
+    			right: 0px;
+                width: 100%;
+    			margin-bottom: 0px;
+				text-align: center;
+				background-color: white;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                bottom: 0px;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			.badge-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+			.btn-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+        </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-custom navbar-dark">
+			<a class="navbar-brand" href="/">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div style = "position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class = "navbar-nav active">
+					<li class = "nav-item" style = "margin-right: 10px;"><a class= "nav-link" href="/CV.html">CV</a></li>
+					<li class = "nav-item"><a class= "nav-link" href="/Projects.html">Projects</a></li>
+				</ul>
+			</div>  
+		</nav>
+            <center>
+        		<h1>CV</h1>
+				</center>
+		<nav id="navbar-example2" class="navbar navbar-dark">
+			<h3 class="navbar-brand">Project Name</h3>
+			<ul class="nav nav-pills">
+			  <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#cs-work">Computer Science Experience</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#bio-work">Biology Experience</a></li>
+			  <li class="nav-item"><a class="nav-link" href="#other-work">Other Work Experience</a></li>
+			  <!--<li class="nav-item"><a class="nav-link" href="#leader">Leadership</a></li>-->
+			</ul>
+		  </nav>
+		  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example" style="height: 65%; margin-bottom: 70px;">
+			<u><h3 id="education">Education</h3></u>
+			<div class = "item">
+				<h4>B.S. Computer Science (Machine Learning Specialization)</h4>
+				<span class="badge badge-pill badge-normal">University of Maryland, College Park</span>
+				<p class="item"></p>
+				<h4>B.S. Cell Biology and Genetics</h4>
+				<span class="badge badge-pill badge-normal">University of Maryland, College Park</span>
+				<p class="item"></p>
+
+			</div>
+			<br>
+			<u><h3 id="cs-work">Computer Science Experience</h3></u>
+			<div class = "item">
+				<h4>Machine Learning and App Developer Intern</h4>
+				<span class="badge badge-pill badge-normal">National Aeronautics and Space Administration Harvest</span>
+				<ul class="item">
+					<li>Publishing an app that collects crop field data from various countries including Malawi, Kenya, and Uganda</li>
+					<li>Developing Google Cloud functions to automate transformation of .nc files</li>
+				</ul>
+				<h4>Full Stack Engineer Intern</h4>
+				<span class="badge badge-pill badge-normal">National Institutes of Standards and Technology</span>
+				<ul class="item">
+					<li>Published <a href = "http://randr19.nist.gov">randr19.nist.gov</a>, an online dataset containing 100,000+ search terms that uses the NIST-developed “root and rule” method to provide users with information on COVID-19</li>
+					<li>Created a knowledge graph that allows the user to visualize connections between different terms using three.js</li>
+					<li>Designed using SQL Server, C#, JavaScript, HTML, CSS, and Bootstrap</li>
+				</ul>
+				<h4>Undergraduate Research Assistant</h4>
+				<span class="badge badge-pill badge-normal">University of Maryland, College Park</span>
+				<ul class="item">
+					<li>Developed electrical circuitry to help create wearable technology that measures gases in the human microbiome to help diagnose underlying diseases</li>
+					<li>Utilized gas sensors to collect gas measurements and analyzed data using statistical algorithms with Python</li>
+					<li>Implemented Arduino code and Circuit Python to microcontrollers incorporated into circuitry</li>
+				</ul>
+			</div>
+			<u><h3 id="bio-work">Biology Experience</h3></u>
+			<div class = "item">
+				<h4>Biomedical Engineer Intern</h4>
+				<span class="badge badge-pill badge-normal">National Institutes of Health</span>
+				<ul class="item">
+					<li>Worked at the Biological Engineering Department</li>
+					<li>Calibrate medical equipment used in the hospital</li>
+					<li>Repair and deliver medical devices throughout hospital</li>
+					<li>CInteracted with nurses and doctors in ensuring medical devices that are used in inpatient clinics are working effectively</li>
+				</ul>
+				<h4>Research Assistant</h4>
+				<span class="badge badge-pill badge-normal">University of Maryland, Baltimore County</span>
+				<ul class="item">
+					<li>Worked with zebrafish and their ability to survive under low oxygen conditions under Dr. Rachel Brewster</li>
+					<li>Conducted experiments with graduate student about the ndrg1 protein</li>
+				</ul>
+			</div>
+			<u><h3 id="other-work">Other Work Experience</h3></u>
+			<div class = "item">
+				<h4>Mathematics Tutor</h4>
+				<span class="badge badge-pill badge-normal">Mathnasium</span>
+				<ul class="item">
+					<li>Tutored up to 15 students per week ranging from elementary to high school in various degrees of mathematics</li>
+					<li>Worked with up to 3 students at a time 10-15 hours per week</li>
+				</ul>
+			</div>
+			<br>
+			<!--
+			<u><h3 id="leader">Leadership</h3></u>
+			 <div class = "item">
+				<h4>Chief Financial Officer</h4>
+				<span class="badge badge-pill badge-primary">Student Teachers Enriching Proficiency Through Service</span>
+				<ul class="item">
+					<li>Managed monthly invoices that are sent to clients</li>
+					<li>Researched various grant applications</li>
+					<li>Contacted multiple local nonprofits that promote STEM</li>
+				</ul>
+				<h4>Treasurer</h4>
+				<span class="badge badge-pill badge-primary">Korean Student Association</span>
+				<ul class="item">
+					<li>Manage purchases</li>
+					<li>Prepare PowerPoint slides for meetings and games</li>
+					<li>Outreach to UMD students</li>
+				</ul>
+				<h4>President</h4>
+				<span class="badge badge-pill badge-primary">Key Club</span>
+				<ul class="item">
+					<li>Communicated to other members with regards to future volunteer events</li>
+					<li>Lead members and 30+ members </li>
+					<li>Coordinating volunteering events with local program directors</li>
+				</ul>
+				<h4>President</h4>
+				<span class="badge badge-pill badge-primary">Mu Alpha Theta</span>
+				<ul class="item">
+					<li>Planned and organized tutoring sessions</li>
+					<li>Worked with up to 3 students per hour session</li>
+				</ul>
+				<h4>Engineering Captain</h4>
+				<span class="badge badge-pill badge-primary">Science Olympiad</span>
+				<ul class="item">
+					<li>Plan events and organize materials for engineering events</li>
+					<li>Assisted teammates with designing contraptions</li>
+				</ul>
+			</div> -->
+		  </div>
+		
+		
+    	<div>
+			<div class="Footer">
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
+
+			</div>
+		</div>
+	
+
+	</div>
+	</body>
+	<script>
+		function openLink(link){
+			console.log("clicked");
+			window.open(link, '_blank');
+		}
+	</script>		
+</html>
