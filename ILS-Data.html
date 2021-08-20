@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio of Andrew Hong</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+
+			body, html{
+				margin:0px;
+				height: 100%;
+				/*
+				background-color: #0093E9;
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+				background-size: cover;
+				background-position: center; 
+				background-repeat: no-repeat;
+				overflow: hidden;
+				*/
+				overflow: scroll;
+
+			}
+            .top {
+  			list-style-type: none;
+  			margin: 0px;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+		    }
+
+            .top>li {
+                float: left;
+            }
+
+            .top>li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+
+            .col-sm-4{
+                text-align:center;
+            }
+            .img-fluid {
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .img-fluid:hover {
+                transition: transform .75s ease;
+                transform: scale(1.05);
+            }
+
+            .video{
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .video:hover {
+                transition: transform .75s ease;
+                transform: scale(1.1);
+            }
+
+			.body{
+				width:90vw;
+				height:85vh;
+				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				transform: translateY(10%);
+				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+				background-color: white;
+				margin-bottom:50px;
+                overflow:scroll
+			}
+
+			.scrollspy-example {
+    			position: relative;
+    			height: 90%;
+    			margin-top: .5rem;
+    			overflow: auto;
+			}
+
+			.item{
+				margin-left: 25px;
+			}
+
+			.bg-custom {
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			}
+
+			.Footer {  
+				position: fixed;
+    			height: 50px;
+    			left: 0px;
+    			right: 0px;
+                width: 100%;
+    			margin-bottom: 0px;
+				text-align: center;
+				background-color: white;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                bottom: 0px;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			.badge-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+			.btn-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+			/* Three image containers (use 25% for four, and 50% for two, etc) */	
+			.column {
+  				float: left;
+  				width: 50%;
+  				padding: 20px;
+			}
+
+			/* Clear floats after image containers */
+			.row::after {
+  				content: "";
+  				clear: both;
+  				display: table;
+			}
+
+        </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-custom navbar-dark">
+			<a class="navbar-brand" href="/ILS-Citation.html">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div style = "position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class = "navbar-nav active">
+					<li class = "nav-item"><a class= "nav-link" href="/ILS-Research.html">Research</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Log.html">Log</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Pictures.html">Pictures</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Data.html">Data and Results</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Reflection.html">Reflection</a></li>
+				</ul>
+			</div>  
+		</nav>
+            <center>
+        		<h1>Data and Results</h1>
+			</center>
+		
+    	<div>
+            <div style = 'margin-left: 15px; margin-right: 15px; text-align: center;'>
+				<p><b>Preface:</b> Because this feature is not released publicly and for security reasons, I am unable to show any public-accessible examples or code.
+				However, I will still be able to show images of the web page I developed.</p> <br>
+				<p>Here is an example of the resulting SQL query. Each column represents a layer of the visualization. IDs connect to key words and key words connect to IDs.
+					A special feature of this algorithm I developed is that there are <b>no</b> repeated terms, meaning that an ID that appears in the first column will not appear 
+					in the third column. This prevents the incident of a repetitive loop of the same ID and key word in multiple columns. "NULL" is used as a placeholder for an empty entry.
+				</p>
+				<img src = Images/RESULT.png alt = "Profile" style = "height:300px; width:300px;"> <br> <br> <br> <br>
+				<p> To quantitatively show the efficiency of the new algorithm, I compared the time required to complete the SQL query for the between the old and new algorithm. Within the code, I included a time variable 
+					to determine the time elapsed to display the visualization web page. After completing 15 trials for each algorithm I obtained these results. The old algorithm had an average run time of 10.05 seconds while the
+					algoritm had an averge runtime of 1.04 seconds. This clearly shows that the new algorithm is more efficient than the old design.
+				</p>
+				<img src = Images/charts.png alt = "Profile" style = "height:300px; width:500px;"> <br> <br> <br> <br>
+				<p>Here is an example of a visualization for the search term "crystal structure" (note: a smaller data table is being used instead of the COVID-19 data table in this example for testing purposes). 
+					Each sphere represents a node (key word or unique ID). Above each node is the key word/ID associated with each node. I added a feature to remove labels with the simple click of a button.
+				</p>
+				<div class="row">
+					<div class="column">
+						<td><img src = Images/image_1.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+					<div class="column">
+						<td><img src = Images/image2.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+				  </div>
+				<br><br><br>
+				<p>The user can also customize the design of the nodes using the settings tab. For example, this is what happens if I make every node red.
+				</p>
+				<div class="row">
+					<div class="column">
+						<td><img src = Images/image3.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+					<div class="column">
+						<td><img src = Images/image4.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+				  </div> <br> <br> <br>
+				  <p>By clicking on a node, the user obtains a URL that leads to the article associated with that node on the top left of the page. Here is an example.
+					<div class="row">
+					<div class="column">
+						<td><img src = Images/image6.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+					<div class="column">
+						<td><img src = Images/image5.png alt = "Profile" style = "height:400px; width:650px;"></img></td>
+					</div>
+				  </div>
+            </div>
+			<!-- <div class="Footer">
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
+
+			</div> -->
+		</div>
+	
+
+	</div>
+	</body>
+	<script>
+		function openLink(link){
+			console.log("clicked");
+			window.open(link, '_blank');
+		}
+	</script>		
+</html>

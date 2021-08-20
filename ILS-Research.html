@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Portfolio of Andrew Hong</title>
+		<meta charset="utf-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+		<style>
+
+			body, html{
+				margin:0px;
+				height: 100%;
+				/*
+				background-color: #0093E9;
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+				background-size: cover;
+				background-position: center; 
+				background-repeat: no-repeat;
+				overflow: hidden;
+				*/
+				overflow: scroll;
+
+			}
+            .top {
+  			list-style-type: none;
+  			margin: 0px;
+  			padding: 0;
+  			overflow: hidden;
+  			background-color: #333;
+		    }
+
+            .top>li {
+                float: left;
+            }
+
+            .top>li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+            li a:hover {
+                background-color: rgba(255, 255, 255, 0.25);
+            }
+
+            .col-sm-4{
+                text-align:center;
+            }
+            .img-fluid {
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .img-fluid:hover {
+                transition: transform .75s ease;
+                transform: scale(1.05);
+            }
+
+            .video{
+                transition: transform .75s ease;
+                overflow: hidden;
+                box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+            }
+
+            .video:hover {
+                transition: transform .75s ease;
+                transform: scale(1.1);
+            }
+
+			.body{
+				width:90vw;
+				height:85vh;
+				display: block;
+  				margin-left: auto;
+  				margin-right: auto;
+  				transform: translateY(10%);
+				box-shadow: 7px 7px 2px 0px rgba(90, 90, 90, 0.25);
+				background-color: white;
+				margin-bottom:50px;
+                overflow:scroll
+			}
+
+			.scrollspy-example {
+    			position: relative;
+    			height: 90%;
+    			margin-top: .5rem;
+    			overflow: auto;
+			}
+
+			.item{
+				margin-left: 25px;
+			}
+
+			.bg-custom {
+				background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+			}
+
+			.Footer {  
+				position: fixed;
+    			height: 50px;
+    			left: 0px;
+    			right: 0px;
+                width: 100%;
+    			margin-bottom: 0px;
+				text-align: center;
+				background-color: white;
+                overflow-y:scroll;
+                overflow-x:hidden;
+                bottom: 0px;
+			}
+
+			h4 {
+				margin-bottom: 0;
+			}
+
+			.badge-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+			.btn-normal{
+				background-color: #34b4eb;
+				color: white;
+			}
+
+        </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg bg-custom navbar-dark">
+			<a class="navbar-brand" href="/ILS-Citation.html">Home</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div style = "position: absolute; right: 80px;" class="collapse navbar-collapse" id="collapsibleNavbar">
+				<ul class = "navbar-nav active">
+					<li class = "nav-item"><a class= "nav-link" href="/ILS-Research.html">Research</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Log.html">Log</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Pictures.html">Pictures</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Data.html">Data and Results</a></li>
+                    <li class = "nav-item"><a class= "nav-link" href="/ILS-Reflection.html">Reflection</a></li>
+				</ul>
+			</div>  
+		</nav>
+            <center>
+        		<h1>Research</h1>
+			</center>
+		
+    	<div>
+            <div style = 'margin-left: 15px; margin-right: 15px; text-align: center;'>
+                <p>There were many aspects of the website I helped develop. One I would like to focus on is the 
+                    visualization of our data entries. Each article in our database was given a unique ID, and set of keywords that relate to the article.
+                    For example, if an article discussed the efficacy of COVID-19 vaccines, one potential keyword that may appear is "vaccine". The
+                    script used to accomplish was created before I arrived, so I cannot provide too much detail on the code. Because of this, different articles will
+                    ultimately share common key words. Using these relations, we are able to establish connections between different articles. During my internship, I 
+                    created a way to visualize these connections in an visually-appealing and <b><i>efficient</i></b> manner. Using the javascript library three.js, I was able to 
+					visualize IDs (DOI) and key-words as nodes from scratch. The original SQL query used to generate these terms was inefficient as it utilized loops for each layer of the visualization.
+					This results in a high time-complexity. However, I discovered that by using full-text indexing, a feature of SQL that allows the user 
+					to find similar terms, I was able to drastically reduce the time to complete the query.
+                </p>
+            </div>
+			<!-- <div class="Footer">
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('mailto:ahong8595@gmail.com')">Email</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://www.linkedin.com/in/andrew-hong-a99330149/')">LinkedIn</button>
+				<button type="button" class="btn btn-normal btn-sm" onclick = "openLink('https://github.com/ahong8595')">Github</button>
+
+			</div> -->
+		</div>
+	
+
+	</div>
+	</body>
+	<script>
+		function openLink(link){
+			console.log("clicked");
+			window.open(link, '_blank');
+		}
+	</script>		
+</html>
